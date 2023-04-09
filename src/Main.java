@@ -40,7 +40,7 @@ public class Main {
                 input[yOfZero][xOfZero] = save;
                 input[yOfZero][xOfZero - 1] = 0;
                 xOfZero -=1;
-                System.out.println(xOfZero + "," + yOfZero + " -> " + (xOfZero + 1) + "," + yOfZero);
+                System.out.println((xOfZero + 1) + "," + (yOfZero + 1) + " -> " + (xOfZero + 2) + "," + (yOfZero + 1));
                 continue;
             }
             if (direction == 1 && xOfZero + 1 != 3){
@@ -48,7 +48,7 @@ public class Main {
                 input[yOfZero][xOfZero] = save;
                 input[yOfZero][xOfZero + 1] = 0;
                 xOfZero +=1;
-                System.out.println(xOfZero + "," + yOfZero + " -> " + (xOfZero -1) + "," + yOfZero);
+                System.out.println((xOfZero + 1) + "," + (yOfZero + 1) + " -> " + (xOfZero) + "," + (yOfZero + 1));
                 continue;
             }
             if (direction == 2 && yOfZero - 1 != -1){
@@ -56,7 +56,7 @@ public class Main {
                 input[yOfZero][xOfZero] = save;
                 input[yOfZero - 1][xOfZero] = 0;
                 yOfZero -=1;
-                System.out.println(xOfZero + "," + yOfZero + " -> " + xOfZero + "," + (yOfZero + 1));
+                System.out.println((xOfZero + 1) + "," + (yOfZero + 1) + " -> " + (xOfZero + 1) + "," + (yOfZero + 2));
                 continue;
             }
             if (direction == 3 && yOfZero + 1 != 3){
@@ -64,7 +64,7 @@ public class Main {
                 input[yOfZero][xOfZero] = save;
                 input[yOfZero + 1][xOfZero] = 0;
                 yOfZero +=1;
-                System.out.println(xOfZero + "," + yOfZero + " -> " + xOfZero + "," + (yOfZero -1));
+                System.out.println((xOfZero + 1) + "," + (yOfZero + 1) + " -> " + (xOfZero + 1) + "," + yOfZero);
             }
         }
         for (int i = 0; i < input.length; i++) {
